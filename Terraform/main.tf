@@ -36,7 +36,7 @@ resource "azurerm_container_group" "aci_group" {
 
   container {
     name   = "prometheus"
-    image  = "prom/prometheus:v2.47.2"
+    image  = "arthurfll/prometheus:1.0"
     cpu    = "0.5"
     memory = "1.0"
     ports {
