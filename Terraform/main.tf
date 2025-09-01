@@ -21,7 +21,7 @@ resource "azurerm_container_group" "aci_group" {
   location            = azurerm_resource_group.rg.location
   resource_group_name = azurerm_resource_group.rg.name
   os_type             = "Linux"
-  ip_address_type     = "public"
+  ip_address_type     = "Public"
   dns_name_label      = "liveprometheusplatform"
 
   container {
