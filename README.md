@@ -1,1 +1,0 @@
-# cloud-native-devops-platform
