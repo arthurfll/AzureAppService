@@ -1,3 +1,21 @@
+terraform {
+  required_providers {
+    azurerm = {
+      source  = "hashicorp/azurerm"
+      version = "~> 3.0"
+    }
+  }
+}
+
+provider "azurerm" {
+  features {}
+}
+
+
+resource "azurerm_resource_group" "rg" {
+  name     = "cloud-native-devops-platform"
+  location = "Brazil South"
+}
 resource "azurerm_container_group" "aci_group" {
   name                = "live-prometheus-group"
   location            = azurerm_resource_group.rg.location
