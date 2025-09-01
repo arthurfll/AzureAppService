@@ -13,6 +13,8 @@ services:
       - 9090:9090
     networks:
       - live_prometheus
+    volumes:
+      - ./Observability/prometheus.yaml:/etc/prometheus/prometheus.yml
 
 
 networks:
