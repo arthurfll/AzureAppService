@@ -4,6 +4,6 @@ WORKDIR /app
 
 COPY . .
 
-EXPOSE 5555
+EXPOSE 5000
 
 ENTRYPOINT ["dotnet", "run", "--urls", "http://0.0.0.0:5000"]
