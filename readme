@@ -1,9 +1,0 @@
-Projeto: 
-
-fase 1: 
-  criar uma api em .NET que será observada por instâncias do Prometheus e Grafana,
-  os 3 serviços devem estar em containers docker e suas imagens disponívris Docker Hub.
-
-fase 2: 
-  Provisionar um Azure Container Instance (ACI) com os 3 serviços utilizando Terraform.
-
